@@ -22,6 +22,7 @@ function showResponse(response) {
 	debugger
     var responseString = JSON.stringify(response, '', 2);
     document.getElementById('response').innerHTML += responseString;
+    console.log(_.map(response.items, function (data) { return {snippet: data.snippet, id: data.id}}))
 }
 
 // Called automatically when JavaScript client library is loaded.
