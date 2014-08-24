@@ -1,0 +1,14 @@
+#PaffyDealer 1.0
+
+import pafy
+import listaDurls.json
+
+subJect = #must find a way to make subJect == listaDurls
+
+v = pafy.new(subJect)
+
+print pafy.lenght
+print pafy.viewcount
+#find a way to write this new data do 'title'.json
+
+v.pafy.getbest([preftype="webm"][, ftypestrict=True])
