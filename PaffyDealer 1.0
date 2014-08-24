@@ -1,14 +1,29 @@
 #PaffyDealer 1.0
 
-import pafy
-import listaDurls.json
+import 'pafy'
+import 'URList'
+import 'knownOnes'
 
-subJect = #must find a way to make subJect == listaDurls
+SubJect0 = pafy.new(URList[0])
+SubJect1 = pafy.new(URList[1])
+SubJect2 = pafy.new(URList[2])
+SubJect3 = pafy.new(URList[3])
+SubJect4 = pafy.new(URList[4])
+#filter the knownOnes? Or leave this to JS?
 
-v = pafy.new(subJect)
+#print pafy.lenght and set of=
+#print pafy.viewcount and set of=
+#find a way to write this new data do 'title[_]'
 
-print pafy.lenght
-print pafy.viewcount
-#find a way to write this new data do 'title'.json
+SubJect00 = SubJect0.getbest()
+SubJect01 = SubJect1.getbest()
+SubJect02 = SubJect2.getbest()
+SubJect03 = SubJect3.getbest()
+SubJect04 = SubJect4.getbest()
+#find how to use: ([preftype="webm"][, ftypestrict=False])
 
-v.pafy.getbest([preftype="webm"][, ftypestrict=True])
+SubJect00.download()
+SubJect01.download()
+SubJect02.download()
+SubJect03.download()
+SubJect04.download()
